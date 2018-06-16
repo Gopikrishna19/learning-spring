@@ -5,8 +5,9 @@
     <bean name="customerRepository"
           class="com.gopikrishna19.learningSpring.repositories.HibernateCustomerRepositoryImpl"/>
     <bean name="customerService"
-          class="com.gopikrishna19.learningSpring.service.CustomerServiceImpl">
-        <constructor-arg index="0"
-                         ref="customerRepository"/>
+          class="com.gopikrishna19.learningSpring.service.CustomerServiceImpl"
+          autowire="byType"
+    >
+        <constructor-arg ref="customerRepository"/>
     </bean>
 </beans>
