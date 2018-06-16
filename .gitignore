@@ -1,0 +1,19 @@
+.idea
+*.iml
+*.iws
+out/
+.idea_modules/
+
+# maven stuff
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# include maven wrapper jar file
+!/.mvn/wrapper/maven-wrapper.jar
