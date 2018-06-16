@@ -11,7 +11,9 @@ public class Application {
 
         Customer customer = customerService.findAll().get(0);
 
-        System.out.println(customer.getFirstName());
-        System.out.println(customer.getLastName());
+        System.out.print(customer.getPrefix() + " ");
+        System.out.print(customer.getFirstName() + " ");
+        System.out.print(customer.getLastName() + " ");
+        System.out.println();
     }
 }
