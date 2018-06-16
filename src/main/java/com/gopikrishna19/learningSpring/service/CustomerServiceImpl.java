@@ -2,9 +2,12 @@ package com.gopikrishna19.learningSpring.service;
 
 import com.gopikrishna19.learningSpring.model.Customer;
 import com.gopikrishna19.learningSpring.repositories.CustomerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerRepository customerRepository;
@@ -14,6 +17,7 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.findAll();
     }
 
+    @Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
