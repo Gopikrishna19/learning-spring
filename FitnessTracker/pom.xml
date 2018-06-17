@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>spring-sample</artifactId>
+        <groupId>com.gopikrishna19.learning-spring</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>FitnessTracker</artifactId>
+    <packaging>war</packaging>
+
+    <name>Fitness Tracker</name>
+</project>
