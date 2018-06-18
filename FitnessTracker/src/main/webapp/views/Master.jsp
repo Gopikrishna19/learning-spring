@@ -12,6 +12,7 @@
                 <c:out value=" | ${pageTitle}"/>
             </c:if>
         </title>
+        <link rel="stylesheet" href="/assets/base.css">
     </head>
     <body>
         <c:if test="${not empty view}">
