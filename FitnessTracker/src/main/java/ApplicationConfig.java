@@ -11,7 +11,7 @@ public class ApplicationConfig {
     @Bean
     public static InternalResourceViewResolver getInternalResourceViewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/");
+        resolver.setPrefix("/views/");
         resolver.setSuffix(".jsp");
         return resolver;
     }
