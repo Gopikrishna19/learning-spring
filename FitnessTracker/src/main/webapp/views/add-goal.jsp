@@ -1,10 +1,10 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<h2>Add minutes exercised</h2>
-<form:form modelAttribute="exercise">
+<h2>Add goal</h2>
+<form:form modelAttribute="goal">
     <table>
         <tr>
-            <td><spring:message code="minutes.text"/></td>
+            <td><spring:message code="goal.text"/></td>
             <td><form:input path="minutes"/></td>
         </tr>
         <tr>
@@ -13,5 +13,3 @@
         </tr>
     </table>
 </form:form>
-
-<h3><spring:message code="minutes.goalForTheDay"/> ${goal.minutes}</h3>
