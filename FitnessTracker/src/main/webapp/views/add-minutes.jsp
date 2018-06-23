@@ -36,7 +36,7 @@
 
         activitiesSelect.appendChild(defaultOption);
 
-        fetch('/activities')
+        fetch('<spring:url value="/activities"/>')
             .then(response => response.json())
             .then(activites => activites.forEach(activity => activitiesSelect.appendChild(createOption(activity.description))))
     }
