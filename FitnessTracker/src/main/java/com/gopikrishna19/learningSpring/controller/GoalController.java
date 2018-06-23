@@ -8,13 +8,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import java.util.Map;
+
 @Controller
 @SessionAttributes("goal")
 public class GoalController {
     @RequestMapping(value = "/add-goal", method = RequestMethod.GET)
     public String addGoal(Model model) {
-        Goal goal = new Goal();
-        goal.setMinutes(10);
+        Map map = model.asMap();
+        Goal goal;
+
+        if (map.get("goal") == null) {
+            goal = new Goal();
+            goal.setMinutes(10);
+        } else {
+            goal = (Goal) map.get("goal");
+        }
 
         model.addAttribute("pageTitle", "Add Goal");
         model.addAttribute("view", "add-goal");
