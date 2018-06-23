@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="/assets/base.css">
     </head>
     <body>
+        <h1><a href="./">Fitness Tracker</a></h1>
+        Language: <a href="?lang=en">en</a> | <a href="?lang=es">es</a>
         <c:if test="${not empty view}">
             <jsp:include page="${view}.jsp"/>
         </c:if>

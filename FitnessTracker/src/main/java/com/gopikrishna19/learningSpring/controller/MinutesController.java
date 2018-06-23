@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MinutesController {
     @RequestMapping(value = "/add-minutes")
     public String addMinutes(@ModelAttribute("exercise") Exercise exercise, Model model) {
+        model.addAttribute("pageTitle", "Add Minutes");
         model.addAttribute("view", "add-minutes");
         return "Master";
     }

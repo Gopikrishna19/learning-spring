@@ -1,2 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<h2>Fitness Tracker</h2>
+<p>Welcome to fitness tracker</p>
+<ul>
+    <li><a href="add-minutes">Add Minutes</a></li>
+</ul>
