@@ -86,8 +86,8 @@ public class ApplicationConfig implements WebMvcConfigurer {
     @Bean
     public static PathExtensionContentNegotiationStrategy getPathExtensionContentNegotiationStrategy() {
         Map<String, MediaType> strategies = new HashMap<>();
-        strategies.put("json", new MediaType("application/json"));
-        strategies.put("xml", new MediaType("application/xml"));
+        strategies.put("json", new MediaType("application", "json"));
+        strategies.put("xml", new MediaType("application", "xml"));
         return new PathExtensionContentNegotiationStrategy(strategies);
     }
 
