@@ -11,9 +11,10 @@ public class ExerciseServiceImpl implements ExerciseService {
     @Override
     public List<Activity> getAllActivities() {
         List<Activity> activities = new ArrayList<>();
-        activities.add(new Activity("Run"));
         activities.add(new Activity("Bike"));
+        activities.add(new Activity("Run"));
         activities.add(new Activity("Swim"));
+        activities.add(new Activity("Walk"));
         return activities;
     }
 }
