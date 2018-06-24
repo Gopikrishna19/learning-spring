@@ -1,7 +1,16 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<style>
+    .error-block {
+        background-color: black;
+        display: inline-block;
+        color: red;
+        padding: 10px;
+    }
+</style>
 <h2>Add minutes exercised</h2>
 <form:form modelAttribute="exercise">
+    <form:errors path="*" cssClass="error-block"/>
     <table>
         <tr>
             <td><spring:message code="minutes.text"/></td>
@@ -10,6 +19,10 @@
         <tr>
             <td><spring:message code="minutes.activityText"/></td>
             <td><form:select id="activities" path="activity"/></td>
+        </tr>
+        <tr>
+            <td><spring:message code="minutes.dateText"/></td>
+            <td><form:input path="date"/></td>
         </tr>
         <tr>
             <td></td>
